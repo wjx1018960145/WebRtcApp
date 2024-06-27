@@ -1,0 +1,19 @@
+use_frameworks!
+
+platform :ios, '10.0'
+target 'JXRtc' do
+  
+pod 'CBFlashyTabBarController'
+pod 'Starscream'
+pod 'Moya/RxSwift'
+pod 'HandyJSON'
+pod 'MBProgressHUD'
+pod 'FLAnimatedImage'
+pod "MJRefresh"
+pod 'WCDB.swift'
+pod 'RxCocoa'
+pod "Kingfisher"
+pod 'PLPlayerKit'
+
+end
+

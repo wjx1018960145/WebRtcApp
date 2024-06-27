@@ -1,0 +1,83 @@
+PODS:
+  - Alamofire (5.9.1)
+  - CBFlashyTabBarController (0.8.3)
+  - FLAnimatedImage (1.0.17)
+  - HandyJSON (5.0.2)
+  - Kingfisher (6.3.1)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - PLPlayerKit (3.4.9):
+    - PLPlayerKit/iphoneos (= 3.4.9)
+  - PLPlayerKit/iphoneos (3.4.9)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
+  - SQLiteRepairKit (1.3.0):
+    - WCDBOptimizedSQLCipher (~> 1.3.0)
+  - Starscream (4.0.4)
+  - WCDB.swift (1.1.0):
+    - SQLiteRepairKit (~> 1.3.0)
+    - WCDBOptimizedSQLCipher (~> 1.3.0)
+  - WCDBOptimizedSQLCipher (1.3.0)
+
+DEPENDENCIES:
+  - CBFlashyTabBarController
+  - FLAnimatedImage
+  - HandyJSON
+  - Kingfisher
+  - MBProgressHUD
+  - MJRefresh
+  - Moya/RxSwift
+  - PLPlayerKit
+  - RxCocoa
+  - Starscream
+  - WCDB.swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CBFlashyTabBarController
+    - FLAnimatedImage
+    - HandyJSON
+    - Kingfisher
+    - MBProgressHUD
+    - MJRefresh
+    - Moya
+    - PLPlayerKit
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SQLiteRepairKit
+    - Starscream
+    - WCDB.swift
+    - WCDBOptimizedSQLCipher
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  CBFlashyTabBarController: bc6b11dd4cbc9b54785c8944156e2f4d4f03b088
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  PLPlayerKit: 6d377f241918be3737c811b84f8366de385c1f91
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SQLiteRepairKit: a66145aadae91886c800f75e16f5cc6476af1a93
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  WCDB.swift: 39e28fe29b5a3bf2927d9fb9218978f19bd49ff0
+  WCDBOptimizedSQLCipher: fc5d49fe6761e54aad29e88da01b6fc1283e5759
+
+PODFILE CHECKSUM: d2aa55549d84f66c0517f30a554fc1cbbf1907cd
+
+COCOAPODS: 1.15.2
