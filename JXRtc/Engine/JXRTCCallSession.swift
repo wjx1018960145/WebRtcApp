@@ -110,25 +110,25 @@ class JXRTCCallSession: NSObject ,JXWebRtcEngineDelegate{
     
     //开始响铃
       public func shouldStartRing() {
-          if (mEvent != nil) {
+          
               mEvent.shouldStartRing(isComing: true)//(true);
-          }
+          
       }
 
       // 关闭响铃
       public func shouldStopRing() {
 //          Log.d(TAG, "shouldStopRing mEvent != null is " + (mEvent != null));
-          if (mEvent != nil) {
+        
               mEvent.shouldStopRing();
-          }
+          
       }
 
       // 发送响铃回复
     public func sendRingBack(targetId:String,room:String) {
 //          executor.execute(() -> {
-              if (mEvent != nil) {
+             
                   mEvent.sendRingBack(targetId: targetId, room: room) //sendRingBack(targetId, room);
-              }
+              
 //          });
       }
     // 加入房间
@@ -152,10 +152,10 @@ class JXRTCCallSession: NSObject ,JXWebRtcEngineDelegate{
     // 发送忙时拒绝
     public func sendBusyRefuse(room:String,targetId:String) {
 //          executor.execute(() -> {
-              if (mEvent != nil) {
+             
                   // 取消拨出
                   mEvent.sendRefuse(room: room, inviteId: targetId, refuseType: 0)// sendRefuse(room, targetId, EnumType.RefuseType.Busy);
-              }
+              
 //          });
 //          release(EnumType.CallEndReason.Hangup);
 
@@ -163,10 +163,10 @@ class JXRTCCallSession: NSObject ,JXWebRtcEngineDelegate{
     // 发送拒绝信令
     public func sendRefuse() {
 //          executor.execute(() -> {
-              if (mEvent != nil) {
+           
                   // 取消拨出
                   mEvent.sendRefuse(room: mRoomId, inviteId: mTargetId, refuseType: 1)// sendRefuse(mRoomId, mTargetId, EnumType.RefuseType.Hangup.ordinal());
-              }
+              
 //          });
 //          release(EnumType.CallEndReason.Hangup);
       }
@@ -218,9 +218,9 @@ class JXRTCCallSession: NSObject ,JXWebRtcEngineDelegate{
                iEngine.userIn(userId: userId)//(userId);
 
                // 关闭响铃
-               if (mEvent != nil) {
+              
                    mEvent.shouldStopRing();
-               }
+               
                // 更换界面
 //               _callState = EnumType.CallState.Connected;
 //
@@ -266,6 +266,7 @@ extension JXRTCCallSession:EngineCallback {
         }catch{
             
         }
+        
     }
     
     func onSendAnswer(userId: String, description: RTCSessionDescription) {

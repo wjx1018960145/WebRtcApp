@@ -52,7 +52,8 @@ class JXEngineKit: NSObject {
     var signalClient:SignalingClient?
     var mCurrentCallSession:JXRTCCallSession?
     var mEvent:IJXEventProtocol?
-  
+    var localView = UIView()
+    var remoteView = UIView()
     var  isAudioOnly = false
      func initEng(event:IJXEventProtocol){
         self.mEvent = event
@@ -79,10 +80,11 @@ class JXEngineKit: NSObject {
     //接听
     public func startInCall(view:UIView,  room:String, targetId:String ,
                             audioOnly:Bool) {
-        if (JXEngineKit.shared == nil) {
-//              Log.e(TAG, "startInCall error,init is not set");
-              return
-          }
+        
+//        if (JXEngineKit.shared == nil) {
+////              Log.e(TAG, "startInCall error,init is not set");
+//              return
+//          }
           // 忙线中
           if (mCurrentCallSession != nil && mCurrentCallSession?.callState != EnumType.CallState.Idle) {
 //              // 发送->忙线中...
@@ -107,5 +109,12 @@ class JXEngineKit: NSObject {
         mCurrentCallSession = nil
     }
     
+    func startRemoteView(view:UIView){
+        self.remoteView = view
+    }
+    
+    func startLocalPreview(view:UIView){
+        self.localView = view
+    }
     
 }

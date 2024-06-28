@@ -13,6 +13,9 @@ class CallPlayVC: UIViewController {
     @IBOutlet weak var hangup: UIButton!
     @IBOutlet weak var timeLab: UILabel!
     
+    @IBOutlet var bgView: UIView!
+    @IBOutlet weak var localSdpStatusLabel: UILabel!
+    @IBOutlet weak var remoteSdpStatusLabel: UILabel!
     @IBOutlet weak var answerSucView: UIView!
     @IBOutlet weak var tipLab: UILabel!
     @IBOutlet weak var answerView: UIView!
@@ -41,9 +44,10 @@ class CallPlayVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-     
-      
+        self.hasLocalSdp = false
         
+        self.view.backgroundColor = .clear
+        self.bgView.backgroundColor = .green
         let pan = UIPanGestureRecognizer(target: self, action: #selector(panAction(pan:)))
         self.localVideoView.addGestureRecognizer(pan)
         initLive(targetId: targetId, false, isAudioOnly, isReplace: false)
@@ -51,17 +55,22 @@ class CallPlayVC: UIViewController {
         self.answerSucView.backgroundColor = .clear
         self.answerSucView.isHidden = true
         
-        DispatchQueue.main.async {
-            let localRenderer = RTCMTLVideoView(frame: self.localVideoView?.frame ?? CGRect.zero)
-            localRenderer.videoContentMode = .scaleAspectFill
-            ManagerTool.shared.webRTCClient!.startCaptureLocalVideo(renderer: localRenderer)
-            if let localVideoView = self.localVideoView {
-                self.embedView(localRenderer, into: localVideoView)
-            }
-            
-          
-        }
+        JXEngineKit.shared.startLocalPreview(view: self.localVideoView)
+        JXEngineKit.shared.startRemoteView(view: self.bgView)
+        
+        
+   
 
+    }
+    
+    
+    
+    private var hasLocalSdp: Bool = false {
+        didSet {
+            DispatchQueue.main.async {
+                self.localSdpStatusLabel?.text = self.hasLocalSdp ? "✅" : "❌"
+            }
+        }
     }
     
     func initLive(targetId:String,_ outgoing:Bool,_ audioOnly:Bool,isReplace:Bool){
@@ -120,6 +129,15 @@ class CallPlayVC: UIViewController {
                                                                     views: ["view":view]))
         containerView.layoutIfNeeded()
     }
+    @IBAction func jietongHangup(_ sender: Any) {
+        
+        let session = JXEngineKit.shared.mCurrentCallSession
+        session!.sendRefuse()
+        
+        JXEngineKit.shared.setNil()
+        self.dismiss(animated: true)
+        
+    }
     
     @IBAction func hangupAction(_ sender: Any) {
         
@@ -131,6 +149,9 @@ class CallPlayVC: UIViewController {
         
         JXEngineKit.shared.setNil()
         self.dismiss(animated: true)
+        
+       
+        
     }
     
     
@@ -140,6 +161,9 @@ class CallPlayVC: UIViewController {
         
         session?.joinHome(roomId: session!.mRoomId)
         
+        answerView.isHidden = true
+        answerSucView.isHidden = false
+        tipLab.isHidden = true
     }
     @objc func panAction(pan: UIPanGestureRecognizer) {
         // 获取视图
@@ -209,8 +233,13 @@ extension CallPlayVC:JXCallSessionCallback {
     
     func didChangeState(var1: EnumType.CallState) {
         if var1 == .Connected {
-            hangup.isHidden = true
-            answerView.isHidden = false
+            DispatchQueue.main.async { [self] in
+                hangup.isHidden = true
+                answerView.isHidden = true
+                answerSucView.isHidden = false
+                
+            }
+           
         }
         
         
@@ -226,12 +255,7 @@ extension CallPlayVC:JXCallSessionCallback {
     
     func didReceiveRemoteVideoTrack(userId: String) {
         DispatchQueue.main.async {
-            let remoteRenderer = RTCMTLVideoView(frame: self.view.frame)
           
-            remoteRenderer.videoContentMode = .scaleAspectFill
-            
-          
-            ManagerTool.shared.webRTCClient!.renderRemoteVideo(to: remoteRenderer)
         }
        
         

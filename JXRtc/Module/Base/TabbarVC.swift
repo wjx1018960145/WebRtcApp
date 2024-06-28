@@ -12,11 +12,11 @@ class TabbarVC: CBFlashyTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let eventsVC = UINavigationController(rootViewController: MainVC())
-        eventsVC.tabBarItem = UITabBarItem(title: "Events", image: #imageLiteral(resourceName: "Events"), tag: 0)
+        eventsVC.tabBarItem = UITabBarItem(title: "User", image: #imageLiteral(resourceName: "Events"), tag: 0)
         let searchVC = UINavigationController(rootViewController: RoomVC())
-        searchVC.tabBarItem = UITabBarItem(title: "Search", image: #imageLiteral(resourceName: "Search"), tag: 0)
+        searchVC.tabBarItem = UITabBarItem(title: "Room", image: #imageLiteral(resourceName: "Search"), tag: 0)
         let settingsVC = UINavigationController(rootViewController: SetingVC())
-        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "Settings"), tag: 0)
+        settingsVC.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "Settings"), tag: 0)
         
 
         let tabBarController = CBFlashyTabBarController()

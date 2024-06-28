@@ -22,7 +22,6 @@
 		FE9172D82C2D1B1E00F9279C /* JXEngineKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172942C2D1B1E00F9279C /* JXEngineKit.swift */; };
 		FE9172D92C2D1B1E00F9279C /* JXRTCCallSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172952C2D1B1E00F9279C /* JXRTCCallSession.swift */; };
 		FE9172DA2C2D1B1E00F9279C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172972C2D1B1E00F9279C /* MainVC.swift */; };
-		FE9172DB2C2D1B1E00F9279C /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9172982C2D1B1E00F9279C /* test.m */; };
 		FE9172DC2C2D1B1E00F9279C /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172992C2D1B1E00F9279C /* IceCandidate.swift */; };
 		FE9172DD2C2D1B1E00F9279C /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729A2C2D1B1E00F9279C /* RTCStates.swift */; };
 		FE9172DE2C2D1B1E00F9279C /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729B2C2D1B1E00F9279C /* SessionDescription.swift */; };
@@ -82,7 +81,6 @@
 		FE91731E2C2D1CD600F9279C /* IJXEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172912C2D1B1E00F9279C /* IJXEvent.swift */; };
 		FE91731F2C2D1CD600F9279C /* ManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C42C2D1B1E00F9279C /* ManagerTool.swift */; };
 		FE9173212C2D1CD600F9279C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172B32C2D1B1E00F9279C /* TestVC.swift */; };
-		FE9173222C2D1CD600F9279C /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9172982C2D1B1E00F9279C /* test.m */; };
 		FE9173232C2D1CD600F9279C /* JXSocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728E2C2D1B1E00F9279C /* JXSocketProtocol.swift */; };
 		FE9173242C2D1CD600F9279C /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729A2C2D1B1E00F9279C /* RTCStates.swift */; };
 		FE9173252C2D1CD600F9279C /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729B2C2D1B1E00F9279C /* SessionDescription.swift */; };
@@ -142,7 +140,6 @@
 		FE9173692C2D1CEF00F9279C /* IJXEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172912C2D1B1E00F9279C /* IJXEvent.swift */; };
 		FE91736A2C2D1CEF00F9279C /* ManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C42C2D1B1E00F9279C /* ManagerTool.swift */; };
 		FE91736C2C2D1CEF00F9279C /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172B32C2D1B1E00F9279C /* TestVC.swift */; };
-		FE91736D2C2D1CEF00F9279C /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9172982C2D1B1E00F9279C /* test.m */; };
 		FE91736E2C2D1CEF00F9279C /* JXSocketProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728E2C2D1B1E00F9279C /* JXSocketProtocol.swift */; };
 		FE91736F2C2D1CEF00F9279C /* RTCStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729A2C2D1B1E00F9279C /* RTCStates.swift */; };
 		FE9173702C2D1CEF00F9279C /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91729B2C2D1B1E00F9279C /* SessionDescription.swift */; };
@@ -227,7 +224,6 @@
 		FE9172942C2D1B1E00F9279C /* JXEngineKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXEngineKit.swift; sourceTree = "<group>"; };
 		FE9172952C2D1B1E00F9279C /* JXRTCCallSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXRTCCallSession.swift; sourceTree = "<group>"; };
 		FE9172972C2D1B1E00F9279C /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
-		FE9172982C2D1B1E00F9279C /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = test.m; path = ../../WebRTCApp/WebRTCApp/test.m; sourceTree = "<group>"; };
 		FE9172992C2D1B1E00F9279C /* IceCandidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IceCandidate.swift; sourceTree = "<group>"; };
 		FE91729A2C2D1B1E00F9279C /* RTCStates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTCStates.swift; sourceTree = "<group>"; };
 		FE91729B2C2D1B1E00F9279C /* SessionDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
@@ -256,7 +252,6 @@
 		FE9172B82C2D1B1E00F9279C /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FE9172B92C2D1B1E00F9279C /* CallPlayVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallPlayVC.xib; sourceTree = "<group>"; };
 		FE9172BA2C2D1B1E00F9279C /* SetingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetingVC.swift; sourceTree = "<group>"; };
-		FE9172BB2C2D1B1E00F9279C /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = test.h; path = ../../WebRTCApp/WebRTCApp/test.h; sourceTree = "<group>"; };
 		FE9172BC2C2D1B1E00F9279C /* RoomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomVC.swift; sourceTree = "<group>"; };
 		FE9172BD2C2D1B1E00F9279C /* CallPlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallPlayVC.swift; sourceTree = "<group>"; };
 		FE9172BE2C2D1B1E00F9279C /* GASuspendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GASuspendManager.swift; sourceTree = "<group>"; };
@@ -376,6 +371,7 @@
 		FE9172962C2D1B1E00F9279C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				FE9172A42C2D1B1E00F9279C /* Services */,
 				FE91728C2C2D1B1E00F9279C /* AVEngine */,
 				FE9172902C2D1B1E00F9279C /* Socket */,
 				FE9172912C2D1B1E00F9279C /* IJXEvent.swift */,
@@ -557,10 +553,7 @@
 				FE91729C2C2D1B1E00F9279C /* Extensions */,
 				FE9172B62C2D1B1E00F9279C /* head */,
 				FE9172AC2C2D1B1E00F9279C /* OC */,
-				FE9172A42C2D1B1E00F9279C /* Services */,
 				FE9172B22C2D1B1E00F9279C /* Table */,
-				FE9172BB2C2D1B1E00F9279C /* test.h */,
-				FE9172982C2D1B1E00F9279C /* test.m */,
 				FE9172B32C2D1B1E00F9279C /* TestVC.swift */,
 				FE9172B72C2D1B1E00F9279C /* TestVC.xib */,
 				FE9172C92C2D1B1E00F9279C /* UIExtensions */,
@@ -957,7 +950,6 @@
 				FE91731E2C2D1CD600F9279C /* IJXEvent.swift in Sources */,
 				FE91731F2C2D1CD600F9279C /* ManagerTool.swift in Sources */,
 				FE9173212C2D1CD600F9279C /* TestVC.swift in Sources */,
-				FE9173222C2D1CD600F9279C /* test.m in Sources */,
 				FE9173232C2D1CD600F9279C /* JXSocketProtocol.swift in Sources */,
 				FE9173242C2D1CD600F9279C /* RTCStates.swift in Sources */,
 				FE9173252C2D1CD600F9279C /* SessionDescription.swift in Sources */,
@@ -1013,7 +1005,6 @@
 				FE9173692C2D1CEF00F9279C /* IJXEvent.swift in Sources */,
 				FE91736A2C2D1CEF00F9279C /* ManagerTool.swift in Sources */,
 				FE91736C2C2D1CEF00F9279C /* TestVC.swift in Sources */,
-				FE91736D2C2D1CEF00F9279C /* test.m in Sources */,
 				FE91736E2C2D1CEF00F9279C /* JXSocketProtocol.swift in Sources */,
 				FE91736F2C2D1CEF00F9279C /* RTCStates.swift in Sources */,
 				FE9173702C2D1CEF00F9279C /* SessionDescription.swift in Sources */,
@@ -1069,7 +1060,6 @@
 				FE9172D52C2D1B1E00F9279C /* IJXEvent.swift in Sources */,
 				FE9172FB2C2D1B1E00F9279C /* ManagerTool.swift in Sources */,
 				FE9172EE2C2D1B1E00F9279C /* TestVC.swift in Sources */,
-				FE9172DB2C2D1B1E00F9279C /* test.m in Sources */,
 				FE9172D32C2D1B1E00F9279C /* JXSocketProtocol.swift in Sources */,
 				FE9172DD2C2D1B1E00F9279C /* RTCStates.swift in Sources */,
 				FE9172DE2C2D1B1E00F9279C /* SessionDescription.swift in Sources */,
@@ -1166,6 +1156,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "JXRtc copy-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App访问您的相机权限来上传头像、发布动态、发送图片等信息？";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要访问你的麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1201,6 +1193,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "JXRtc copy-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App访问您的相机权限来上传头像、发布动态、发送图片等信息？";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要访问你的麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1235,6 +1229,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "JXRtc copy2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App访问您的相机权限来上传头像、发布动态、发送图片等信息？";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要访问你的麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1270,6 +1266,8 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "JXRtc copy2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "是否允许此App访问您的相机权限来上传头像、发布动态、发送图片等信息？";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "需要访问你的麦克风";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

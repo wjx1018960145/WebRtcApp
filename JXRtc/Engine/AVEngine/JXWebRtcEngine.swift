@@ -30,6 +30,8 @@ class JXWebRtcEngine: NSObject {
     private var mCallback:EngineCallback?
     public var mIsAudioOnly:Bool
 
+    private let audioQueue = DispatchQueue(label: "audio")
+    
     var isOffer = false
     var userId = ""
     
@@ -215,6 +217,44 @@ class JXWebRtcEngine: NSObject {
         
         self.localVideoTrack?.add(renderer)
     }
+    
+    func speakerOn() {
+        self.audioQueue.async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            self.rtcAudioSession.lockForConfiguration()
+            do {
+                try self.rtcAudioSession.setCategory(AVAudioSession.Category.playAndRecord)
+                try self.rtcAudioSession.overrideOutputAudioPort(.speaker)
+                try self.rtcAudioSession.setActive(true)
+            } catch let error {
+                debugPrint("Couldn't force audio to speaker: \(error)")
+            }
+            self.rtcAudioSession.unlockForConfiguration()
+        }
+    }
+    
+    // Fallback to the default playing device: headphones/bluetooth/ear speaker
+    func speakerOff() {
+        self.audioQueue.async { [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            self.rtcAudioSession.lockForConfiguration()
+            do {
+                try self.rtcAudioSession.setCategory(AVAudioSession.Category.playAndRecord)
+                try self.rtcAudioSession.overrideOutputAudioPort(.none)
+            } catch let error {
+                debugPrint("Error setting AVAudioSession category: \(error)")
+            }
+            self.rtcAudioSession.unlockForConfiguration()
+        }
+    }
+    
+    
     func renderRemoteVideo(to renderer: RTCVideoRenderer) {
         self.remoteVideoTrack?.add(renderer)
     }
@@ -253,8 +293,58 @@ extension JXWebRtcEngine:RTCPeerConnectionDelegate{
     func peerConnection(_ peerConnection: RTCPeerConnection, didChange newState: RTCIceConnectionState) {
         debugPrint("peerConnection new connection state: \(newState)")
 //        self.delegate?.webRTCClient(self, didChangeConnectionState: newState)
+        let textColor: UIColor
+        switch newState {
+        case .connected, .completed:
+            textColor = .green
+        case .disconnected:
+            textColor = .orange
+        case .failed, .closed:
+            textColor = .red
+        case .new, .checking, .count:
+            textColor = .black
+        @unknown default:
+            textColor = .black
+        }
+        
+        DispatchQueue.main.async {
+            
+            let localRenderer = RTCMTLVideoView(frame: JXEngineKit.shared.localView.frame)
+            localRenderer.videoContentMode = .scaleAspectFill
+//            ManagerTool.shared.webRTCClient!.startCaptureLocalVideo(renderer: localRenderer)
+//            if JXEngineKit.shared.localView != nil {
+                self.embedView(localRenderer, into: JXEngineKit.shared.localView)
+//            }
+            ManagerTool.shared.webRTCClient?.speakerOn()
+          
+            
+            let remoteRenderer = RTCMTLVideoView(frame: JXEngineKit.shared.remoteView.frame)
+          
+            remoteRenderer.videoContentMode = .scaleAspectFill
+            
+            self.embedView(remoteRenderer, into: JXEngineKit.shared.remoteView)
+            
+            JXEngineKit.shared.remoteView.sendSubviewToBack(remoteRenderer)
+            
+            ManagerTool.shared.webRTCClient!.renderRemoteVideo(to: remoteRenderer)
+            
+        }
+        
     }
-    
+    private func embedView(_ view: UIView, into containerView: UIView) {
+        containerView.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
+                                                                    options: [],
+                                                                    metrics: nil,
+                                                                    views: ["view":view]))
+        
+        containerView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|",
+                                                                    options: [],
+                                                                    metrics: nil,
+                                                                    views: ["view":view]))
+        containerView.layoutIfNeeded()
+    }
     func peerConnection(_ peerConnection: RTCPeerConnection, didChange newState: RTCIceGatheringState) {
         debugPrint("peerConnection new gathering state: \(newState)")
     }
@@ -318,7 +408,7 @@ extension JXWebRtcEngine:IEngine{
             mCallback!.joinRoomSucc();
         }
         
-      
+        self.userId = userIds[0]
         
       
     }
@@ -343,8 +433,15 @@ extension JXWebRtcEngine:IEngine{
 //              peers.put(userId, peer);
 //              // createOffer
 //
-        self.sendDSP()
+//        self.sendDSP()
+        
+        self.offer { sdp in
+            self.delegate?.onSendOffer(userId: userId, description: sdp)
+               }
+        
+        
       
+        
         
     }
     
@@ -365,7 +462,7 @@ extension JXWebRtcEngine:IEngine{
                             let message = Message.sdp(SessionDescription(from: sdp))
                             do {
                                 let dataMessage = try self.encoder.encode(message)
-                                self.delegate?.onSendOffer(userId: self.userId, description: sdp)
+                                self.delegate?.onSendOffer(userId: "456", description: sdp)
                             }catch {
                                 debugPrint("Warning: Could not encode sdp: \(error)")
                             }
@@ -424,20 +521,24 @@ extension JXWebRtcEngine:IEngine{
 //                   peer.createAnswer();
 //               }
         
-//        self.offer { sdp in
-//            
-//        }
-        
         let remot  = RTCSessionDescription(type: .offer, sdp: description)
-        
-       
         
         self.set(remoteSdp: remot) { error in
             if error == nil{
                 self.isOffer = false
 //                self.sendDSP()
+                
+                
+                
+              
+                
+                
                 self.answer { sdp in
-                    self.delegate?.onSendAnswer(userId: "123", description: sdp)
+                    self.delegate?.onSendAnswer(userId: self.userId, description: sdp)
+                    
+                 
+                
+                    
                 }
                 
             }
@@ -447,15 +548,20 @@ extension JXWebRtcEngine:IEngine{
     }
     
     func receiveAnswer(userId: String, sdp: String) {
-//        Log.d(TAG, "receiveAnswer--" + userId);
+        debugPrint("receiveAnswer--" + userId);
 //              Peer peer = peers.get(userId);
 //              if (peer != null) {
 //                  SessionDescription sessionDescription = new SessionDescription(SessionDescription.Type.ANSWER, sdp);
 //                  peer.setRemoteDescription(sessionDescription);
 //              }
-        self.answer { localSdp in
+        
+        
+        let remot  = RTCSessionDescription(type: .answer, sdp: sdp)
+        self.set(remoteSdp: remot) { error in
             
         }
+        
+        
     }
     
     func receiveIceCandidate(userId: String, id: String, label: Int, candidate: String) {
@@ -463,9 +569,13 @@ extension JXWebRtcEngine:IEngine{
 
         
         let candidate = RTCIceCandidate(sdp: candidate, sdpMLineIndex: Int32(label), sdpMid: id)
-        self.peerConnection?.add(candidate, completionHandler: { error in
+//        self.peerConnection?.add(candidate, completionHandler: { error in
+//        
+//        })
         
-        })
+        self.set(remoteCandidate: candidate) { error in
+            
+        }
 //        self.set(remoteCandidate: candidate) { error in
 //            
 //        }// erConnection?.add(<#T##candidate: RTCIceCandidate##RTCIceCandidate#>, completionHandler: <#T##(Error?) -> Void#>)
