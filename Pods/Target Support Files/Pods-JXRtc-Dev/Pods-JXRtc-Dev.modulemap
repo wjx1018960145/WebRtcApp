@@ -1,0 +1,6 @@
+framework module Pods_JXRtc_Dev {
+  umbrella header "Pods-JXRtc-Dev-umbrella.h"
+
+  export *
+  module * { export * }
+}

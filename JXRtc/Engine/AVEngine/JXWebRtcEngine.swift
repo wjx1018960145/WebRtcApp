@@ -92,8 +92,10 @@ class JXWebRtcEngine: NSObject {
         
         // Video
         let videoTrack = self.createVideoTrack()
+        
         self.localVideoTrack = videoTrack
         self.peerConnection?.add(videoTrack, streamIds: [streamId])
+        
         self.remoteVideoTrack = self.peerConnection?.transceivers.first { $0.mediaType == .video }?.receiver.track as? RTCVideoTrack
         
         // Data
@@ -311,7 +313,7 @@ extension JXWebRtcEngine:RTCPeerConnectionDelegate{
             
             let localRenderer = RTCMTLVideoView(frame: JXEngineKit.shared.localView.frame)
             localRenderer.videoContentMode = .scaleAspectFill
-//            ManagerTool.shared.webRTCClient!.startCaptureLocalVideo(renderer: localRenderer)
+            self.startCaptureLocalVideo(renderer: localRenderer)
 //            if JXEngineKit.shared.localView != nil {
                 self.embedView(localRenderer, into: JXEngineKit.shared.localView)
 //            }
@@ -326,7 +328,7 @@ extension JXWebRtcEngine:RTCPeerConnectionDelegate{
             
             JXEngineKit.shared.remoteView.sendSubviewToBack(remoteRenderer)
             
-            ManagerTool.shared.webRTCClient!.renderRemoteVideo(to: remoteRenderer)
+            self.renderRemoteVideo(to: remoteRenderer)
             
         }
         
@@ -397,7 +399,7 @@ extension JXWebRtcEngine:RTCVideoCapturerDelegate{
 extension JXWebRtcEngine:IEngine{
     func initE(callback: EngineCallback) {
         delegate = callback
-        createMediaSenders()
+//        createMediaSenders()
         
     }
     
@@ -436,8 +438,10 @@ extension JXWebRtcEngine:IEngine{
 //        self.sendDSP()
         
         self.offer { sdp in
+            
             self.delegate?.onSendOffer(userId: userId, description: sdp)
-               }
+            
+            }
         
         
       
@@ -591,7 +595,9 @@ extension JXWebRtcEngine:IEngine{
     }
     
     func stopPreview() {
-        
+        self.videoCapturer = nil
+        self.localVideoTrack = nil
+        self.remoteVideoTrack = nil
     }
     
     func startStream() {

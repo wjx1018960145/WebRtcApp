@@ -18,9 +18,11 @@ class TabbarVC: CBFlashyTabBarController {
         let settingsVC = UINavigationController(rootViewController: SetingVC())
         settingsVC.tabBarItem = UITabBarItem(title: "Setting", image: #imageLiteral(resourceName: "Settings"), tag: 0)
         
+        let test = UINavigationController(rootViewController: TestVC())
+        test.tabBarItem = UITabBarItem(title: "测试", image: #imageLiteral(resourceName:"Settings"), tag: 0)
 
         let tabBarController = CBFlashyTabBarController()
-        self.viewControllers = [eventsVC, searchVC, settingsVC]
+        self.viewControllers = [eventsVC, searchVC, settingsVC,test]
         
         
         

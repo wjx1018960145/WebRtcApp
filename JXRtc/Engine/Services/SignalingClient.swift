@@ -8,7 +8,7 @@
 
 import Foundation
 import WebRTC
-import HandyJSON
+
 protocol SignalClientDelegate: AnyObject {
     func signalClientDidConnect(_ signalClient: SignalingClient)
     func signalClientDidDisconnect(_ signalClient: SignalingClient)

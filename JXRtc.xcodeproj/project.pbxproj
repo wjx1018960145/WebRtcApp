@@ -7,7 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1068865BA17A1C7F4D7E52 /* Pods_JXRtc_Pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76AD133AB24D93D8A95567D8 /* Pods_JXRtc_Pro.framework */; };
+		2B630285FD8A7E7875E291B8 /* Pods_JXRtc_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5A34AD090B8814AFAEB4E27 /* Pods_JXRtc_Dev.framework */; };
 		3F9D25820EA94261CA4725EA /* Pods_JXRtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */; };
+		9BF1B25DEDF2ABD58256CBFC /* Pods_JXRtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */; };
+		FE63D7D52C2E9CDD003DF8AC /* CallVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D42C2E9CDD003DF8AC /* CallVideoView.swift */; };
+		FE63D7D62C2E9CE4003DF8AC /* CallVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D42C2E9CDD003DF8AC /* CallVideoView.swift */; };
+		FE63D7D72C2E9CE5003DF8AC /* CallVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D42C2E9CDD003DF8AC /* CallVideoView.swift */; };
+		FE63D7D92C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D82C2E9CFF003DF8AC /* CallVoiceView.swift */; };
+		FE63D7DA2C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D82C2E9CFF003DF8AC /* CallVoiceView.swift */; };
+		FE63D7DB2C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7D82C2E9CFF003DF8AC /* CallVoiceView.swift */; };
+		FE63D7DD2C2E9F15003DF8AC /* CallVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7DC2C2E9F15003DF8AC /* CallVideoView.xib */; };
+		FE63D7DE2C2E9F15003DF8AC /* CallVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7DC2C2E9F15003DF8AC /* CallVideoView.xib */; };
+		FE63D7DF2C2E9F15003DF8AC /* CallVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7DC2C2E9F15003DF8AC /* CallVideoView.xib */; };
+		FE63D7E12C2EA075003DF8AC /* CallVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7E02C2EA075003DF8AC /* CallVoiceView.xib */; };
+		FE63D7E22C2EA075003DF8AC /* CallVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7E02C2EA075003DF8AC /* CallVoiceView.xib */; };
+		FE63D7E32C2EA075003DF8AC /* CallVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE63D7E02C2EA075003DF8AC /* CallVoiceView.xib */; };
+		FE63D7E52C2EA216003DF8AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E42C2EA216003DF8AC /* UIView.swift */; };
+		FE63D7E62C2EA216003DF8AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E42C2EA216003DF8AC /* UIView.swift */; };
+		FE63D7E72C2EA216003DF8AC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E42C2EA216003DF8AC /* UIView.swift */; };
+		FE63D7E92C2EA98E003DF8AC /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E82C2EA98E003DF8AC /* CALayer.swift */; };
+		FE63D7EA2C2EA98E003DF8AC /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E82C2EA98E003DF8AC /* CALayer.swift */; };
+		FE63D7EB2C2EA98E003DF8AC /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D7E82C2EA98E003DF8AC /* CALayer.swift */; };
+		FE63D7F92C2EBE0A003DF8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; };
+		FE63D7FA2C2EBE0A003DF8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE63D7FC2C2EBE38003DF8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FE63D7FD2C2EBE38003DF8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE63D7FF2C2EBE51003DF8AC /* WebRTC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FE63D8002C2EBE51003DF8AC /* WebRTC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FE63D8132C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8122C2ECAED003DF8AC /* EWMBProgressHUD.swift */; };
+		FE63D8142C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8122C2ECAED003DF8AC /* EWMBProgressHUD.swift */; };
+		FE63D8152C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8122C2ECAED003DF8AC /* EWMBProgressHUD.swift */; };
+		FE63D8172C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8162C2ECE72003DF8AC /* MBProgressHUD.ex.swift */; };
+		FE63D8182C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8162C2ECE72003DF8AC /* MBProgressHUD.ex.swift */; };
+		FE63D8192C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE63D8162C2ECE72003DF8AC /* MBProgressHUD.ex.swift */; };
 		FE9172CD2C2D1B1E00F9279C /* AVEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172872C2D1B1E00F9279C /* AVEngine.swift */; };
 		FE9172CE2C2D1B1E00F9279C /* ConcurrentHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172882C2D1B1E00F9279C /* ConcurrentHashMap.swift */; };
 		FE9172CF2C2D1B1E00F9279C /* EngineCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172892C2D1B1E00F9279C /* EngineCallback.swift */; };
@@ -55,14 +88,11 @@
 		FE9172FA2C2D1B1E00F9279C /* LoginInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C32C2D1B1E00F9279C /* LoginInfoManager.swift */; };
 		FE9172FB2C2D1B1E00F9279C /* ManagerTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C42C2D1B1E00F9279C /* ManagerTool.swift */; };
 		FE9172FC2C2D1B1E00F9279C /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C52C2D1B1E00F9279C /* Tools.swift */; };
-		FE9172FD2C2D1B1E00F9279C /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C72C2D1B1E00F9279C /* MBProgressHUD.ex.swift */; };
 		FE9172FE2C2D1B1E00F9279C /* UIFont.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C82C2D1B1E00F9279C /* UIFont.ex.swift */; };
 		FE9172FF2C2D1B1E00F9279C /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172CA2C2D1B1E00F9279C /* MainVC.xib */; };
 		FE9173012C2D1B1E00F9279C /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172CC2C2D1B1E00F9279C /* TabbarVC.swift */; };
 		FE9173032C2D1B2800F9279C /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9173022C2D1B2800F9279C /* Api.swift */; };
-		FE9173062C2D1CAC00F9279C /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = FE9173052C2D1CAC00F9279C /* WebRTC */; };
 		FE91730C2C2D1CD600F9279C /* JXWebRtcEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728B2C2D1B1E00F9279C /* JXWebRtcEngine.swift */; };
-		FE91730D2C2D1CD600F9279C /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C72C2D1B1E00F9279C /* MBProgressHUD.ex.swift */; };
 		FE91730E2C2D1CD600F9279C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172B12C2D1B1E00F9279C /* Table.swift */; };
 		FE91730F2C2D1CD600F9279C /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172A22C2D1B1E00F9279C /* SignalingClient.swift */; };
 		FE9173102C2D1CD600F9279C /* JXSocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728D2C2D1B1E00F9279C /* JXSocketEvent.swift */; };
@@ -109,8 +139,6 @@
 		FE91733C2C2D1CD600F9279C /* LoginInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C32C2D1B1E00F9279C /* LoginInfoManager.swift */; };
 		FE91733D2C2D1CD600F9279C /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172992C2D1B1E00F9279C /* IceCandidate.swift */; };
 		FE91733E2C2D1CD600F9279C /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172A32C2D1B1E00F9279C /* WebRTCClient.swift */; };
-		FE9173402C2D1CD600F9279C /* Pods_JXRtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */; };
-		FE9173412C2D1CD600F9279C /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = FE9173082C2D1CD600F9279C /* WebRTC */; };
 		FE9173432C2D1CD600F9279C /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172CA2C2D1B1E00F9279C /* MainVC.xib */; };
 		FE9173442C2D1CD600F9279C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172AF2C2D1B1E00F9279C /* LoginVC.xib */; };
 		FE9173452C2D1CD600F9279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE141DB2C2D07C4002B0985 /* LaunchScreen.storyboard */; };
@@ -121,7 +149,6 @@
 		FE91734A2C2D1CD600F9279C /* SetingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172B42C2D1B1E00F9279C /* SetingVC.xib */; };
 		FE91734B2C2D1CD600F9279C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE141D62C2D07C4002B0985 /* Main.storyboard */; };
 		FE9173572C2D1CEF00F9279C /* JXWebRtcEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728B2C2D1B1E00F9279C /* JXWebRtcEngine.swift */; };
-		FE9173582C2D1CEF00F9279C /* MBProgressHUD.ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C72C2D1B1E00F9279C /* MBProgressHUD.ex.swift */; };
 		FE9173592C2D1CEF00F9279C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172B12C2D1B1E00F9279C /* Table.swift */; };
 		FE91735A2C2D1CEF00F9279C /* SignalingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172A22C2D1B1E00F9279C /* SignalingClient.swift */; };
 		FE91735B2C2D1CEF00F9279C /* JXSocketEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE91728D2C2D1B1E00F9279C /* JXSocketEvent.swift */; };
@@ -168,8 +195,6 @@
 		FE9173872C2D1CEF00F9279C /* LoginInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172C32C2D1B1E00F9279C /* LoginInfoManager.swift */; };
 		FE9173882C2D1CEF00F9279C /* IceCandidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172992C2D1B1E00F9279C /* IceCandidate.swift */; };
 		FE9173892C2D1CEF00F9279C /* WebRTCClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9172A32C2D1B1E00F9279C /* WebRTCClient.swift */; };
-		FE91738B2C2D1CEF00F9279C /* Pods_JXRtc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */; };
-		FE91738C2C2D1CEF00F9279C /* WebRTC in Frameworks */ = {isa = PBXBuildFile; productRef = FE9173532C2D1CEF00F9279C /* WebRTC */; };
 		FE91738E2C2D1CEF00F9279C /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172CA2C2D1B1E00F9279C /* MainVC.xib */; };
 		FE91738F2C2D1CEF00F9279C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE9172AF2C2D1B1E00F9279C /* LoginVC.xib */; };
 		FE9173902C2D1CEF00F9279C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEE141DB2C2D07C4002B0985 /* LaunchScreen.storyboard */; };
@@ -206,10 +231,62 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		FE63D7FB2C2EBE0A003DF8AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE63D7FA2C2EBE0A003DF8AC /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE63D7FE2C2EBE38003DF8AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE63D7FD2C2EBE38003DF8AC /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE63D8012C2EBE51003DF8AC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FE63D8002C2EBE51003DF8AC /* WebRTC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1173A5ADB29DE7B323EACF48 /* Pods-JXRtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc.release.xcconfig"; path = "Target Support Files/Pods-JXRtc/Pods-JXRtc.release.xcconfig"; sourceTree = "<group>"; };
 		19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXRtc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6EABEE63D7F1A3F863A6EB85 /* Pods-JXRtc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc.release.xcconfig"; path = "Target Support Files/Pods-JXRtc/Pods-JXRtc.release.xcconfig"; sourceTree = "<group>"; };
-		F7E859BF3EA11BE8C7AFF316 /* Pods-JXRtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc.debug.xcconfig"; path = "Target Support Files/Pods-JXRtc/Pods-JXRtc.debug.xcconfig"; sourceTree = "<group>"; };
+		56E1DC09F75486D500A28F84 /* Pods-JXRtc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc.debug.xcconfig"; path = "Target Support Files/Pods-JXRtc/Pods-JXRtc.debug.xcconfig"; sourceTree = "<group>"; };
+		6234D83123EF88BE5D299888 /* Pods-JXRtc-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc-Dev.debug.xcconfig"; path = "Target Support Files/Pods-JXRtc-Dev/Pods-JXRtc-Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		76AD133AB24D93D8A95567D8 /* Pods_JXRtc_Pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXRtc_Pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD755B4F60A2457218567179 /* Pods-JXRtc-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc-Dev.release.xcconfig"; path = "Target Support Files/Pods-JXRtc-Dev/Pods-JXRtc-Dev.release.xcconfig"; sourceTree = "<group>"; };
+		D5AFBB2564BC3C321D01A078 /* Pods-JXRtc-Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc-Pro.debug.xcconfig"; path = "Target Support Files/Pods-JXRtc-Pro/Pods-JXRtc-Pro.debug.xcconfig"; sourceTree = "<group>"; };
+		E5A34AD090B8814AFAEB4E27 /* Pods_JXRtc_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JXRtc_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2A801D5B766C64565C403F /* Pods-JXRtc-Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXRtc-Pro.release.xcconfig"; path = "Target Support Files/Pods-JXRtc-Pro/Pods-JXRtc-Pro.release.xcconfig"; sourceTree = "<group>"; };
+		FE63D7D42C2E9CDD003DF8AC /* CallVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVideoView.swift; sourceTree = "<group>"; };
+		FE63D7D82C2E9CFF003DF8AC /* CallVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallVoiceView.swift; sourceTree = "<group>"; };
+		FE63D7DC2C2E9F15003DF8AC /* CallVideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallVideoView.xib; sourceTree = "<group>"; };
+		FE63D7E02C2EA075003DF8AC /* CallVoiceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallVoiceView.xib; sourceTree = "<group>"; };
+		FE63D7E42C2EA216003DF8AC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FE63D7E82C2EA98E003DF8AC /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		FE63D7EC2C2EB8E9003DF8AC /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = "Pods/WebRTC-lib/WebRTC.xcframework"; sourceTree = "<group>"; };
+		FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WebRTC.xcframework; sourceTree = "<group>"; };
+		FE63D8122C2ECAED003DF8AC /* EWMBProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EWMBProgressHUD.swift; sourceTree = "<group>"; };
+		FE63D8162C2ECE72003DF8AC /* MBProgressHUD.ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.ex.swift; sourceTree = "<group>"; };
 		FE9172872C2D1B1E00F9279C /* AVEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVEngine.swift; sourceTree = "<group>"; };
 		FE9172882C2D1B1E00F9279C /* ConcurrentHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcurrentHashMap.swift; sourceTree = "<group>"; };
 		FE9172892C2D1B1E00F9279C /* EngineCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EngineCallback.swift; sourceTree = "<group>"; };
@@ -260,7 +337,6 @@
 		FE9172C32C2D1B1E00F9279C /* LoginInfoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInfoManager.swift; sourceTree = "<group>"; };
 		FE9172C42C2D1B1E00F9279C /* ManagerTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerTool.swift; sourceTree = "<group>"; };
 		FE9172C52C2D1B1E00F9279C /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		FE9172C72C2D1B1E00F9279C /* MBProgressHUD.ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBProgressHUD.ex.swift; sourceTree = "<group>"; };
 		FE9172C82C2D1B1E00F9279C /* UIFont.ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.ex.swift; sourceTree = "<group>"; };
 		FE9172CA2C2D1B1E00F9279C /* MainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		FE9172CC2C2D1B1E00F9279C /* TabbarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
@@ -289,8 +365,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9173402C2D1CD600F9279C /* Pods_JXRtc.framework in Frameworks */,
-				FE9173412C2D1CD600F9279C /* WebRTC in Frameworks */,
+				FE63D7FC2C2EBE38003DF8AC /* WebRTC.xcframework in Frameworks */,
+				2B630285FD8A7E7875E291B8 /* Pods_JXRtc_Dev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +374,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE91738B2C2D1CEF00F9279C /* Pods_JXRtc.framework in Frameworks */,
-				FE91738C2C2D1CEF00F9279C /* WebRTC in Frameworks */,
+				FE63D7FF2C2EBE51003DF8AC /* WebRTC.xcframework in Frameworks */,
+				0E1068865BA17A1C7F4D7E52 /* Pods_JXRtc_Pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F9D25820EA94261CA4725EA /* Pods_JXRtc.framework in Frameworks */,
-				FE9173062C2D1CAC00F9279C /* WebRTC in Frameworks */,
+				9BF1B25DEDF2ABD58256CBFC /* Pods_JXRtc.framework in Frameworks */,
+				FE63D7F92C2EBE0A003DF8AC /* WebRTC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +409,10 @@
 		1A86C42A35DE26B1A6269BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FE63D7EC2C2EB8E9003DF8AC /* WebRTC.xcframework */,
 				19DC0846FEC4E61F24D652B3 /* Pods_JXRtc.framework */,
+				E5A34AD090B8814AFAEB4E27 /* Pods_JXRtc_Dev.framework */,
+				76AD133AB24D93D8A95567D8 /* Pods_JXRtc_Pro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -340,10 +420,33 @@
 		2B68E8D375ACAFD2512A42E4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F7E859BF3EA11BE8C7AFF316 /* Pods-JXRtc.debug.xcconfig */,
-				6EABEE63D7F1A3F863A6EB85 /* Pods-JXRtc.release.xcconfig */,
+				56E1DC09F75486D500A28F84 /* Pods-JXRtc.debug.xcconfig */,
+				1173A5ADB29DE7B323EACF48 /* Pods-JXRtc.release.xcconfig */,
+				6234D83123EF88BE5D299888 /* Pods-JXRtc-Dev.debug.xcconfig */,
+				AD755B4F60A2457218567179 /* Pods-JXRtc-Dev.release.xcconfig */,
+				D5AFBB2564BC3C321D01A078 /* Pods-JXRtc-Pro.debug.xcconfig */,
+				FA2A801D5B766C64565C403F /* Pods-JXRtc-Pro.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		FE63D7D32C2E9CB9003DF8AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE63D7D42C2E9CDD003DF8AC /* CallVideoView.swift */,
+				FE63D7D82C2E9CFF003DF8AC /* CallVoiceView.swift */,
+				FE63D7DC2C2E9F15003DF8AC /* CallVideoView.xib */,
+				FE63D7E02C2EA075003DF8AC /* CallVoiceView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE63D8112C2ECADC003DF8AC /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				FE63D8122C2ECAED003DF8AC /* EWMBProgressHUD.swift */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		FE91728C2C2D1B1E00F9279C /* AVEngine */ = {
@@ -457,6 +560,7 @@
 		FE9172C22C2D1B1E00F9279C /* UIUtils */ = {
 			isa = PBXGroup;
 			children = (
+				FE63D8112C2ECADC003DF8AC /* HUD */,
 				FE9172C12C2D1B1E00F9279C /* Suspend */,
 			);
 			path = UIUtils;
@@ -475,8 +579,10 @@
 		FE9172C92C2D1B1E00F9279C /* UIExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				FE9172C72C2D1B1E00F9279C /* MBProgressHUD.ex.swift */,
+				FE63D8162C2ECE72003DF8AC /* MBProgressHUD.ex.swift */,
 				FE9172C82C2D1B1E00F9279C /* UIFont.ex.swift */,
+				FE63D7E42C2EA216003DF8AC /* UIView.swift */,
+				FE63D7E82C2EA98E003DF8AC /* CALayer.swift */,
 			);
 			path = UIExtensions;
 			sourceTree = "<group>";
@@ -484,6 +590,7 @@
 		FE91739D2C2D26D500F9279C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				FE63D7D32C2E9CB9003DF8AC /* View */,
 				FE91739F2C2D270B00F9279C /* Base */,
 				FE91739E2C2D26F100F9279C /* Controller */,
 			);
@@ -546,6 +653,7 @@
 		FEE141CF2C2D07C4002B0985 /* JXRtc */ = {
 			isa = PBXGroup;
 			children = (
+				FE63D7F52C2EBD80003DF8AC /* WebRTC.xcframework */,
 				FE91739D2C2D26D500F9279C /* Module */,
 				FE9173022C2D1B2800F9279C /* Api.swift */,
 				FE9172B82C2D1B1E00F9279C /* Config.swift */,
@@ -593,20 +701,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE91734D2C2D1CD600F9279C /* Build configuration list for PBXNativeTarget "JXRtc-Dev" */;
 			buildPhases = (
-				FE91730A2C2D1CD600F9279C /* [CP] Check Pods Manifest.lock */,
+				506DEEB23F782E2000C93894 /* [CP] Check Pods Manifest.lock */,
 				FE91730B2C2D1CD600F9279C /* Sources */,
 				FE91733F2C2D1CD600F9279C /* Frameworks */,
 				FE9173422C2D1CD600F9279C /* Resources */,
-				FE91734C2C2D1CD600F9279C /* [CP] Embed Pods Frameworks */,
+				FE63D7FE2C2EBE38003DF8AC /* Embed Frameworks */,
+				C0587EB5439CD072BF9024E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "JXRtc-Dev";
-			packageProductDependencies = (
-				FE9173082C2D1CD600F9279C /* WebRTC */,
-			);
 			productName = JXRtc;
 			productReference = FE9173502C2D1CD600F9279C /* JXRtc-Dev.app */;
 			productType = "com.apple.product-type.application";
@@ -615,20 +721,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE9173982C2D1CEF00F9279C /* Build configuration list for PBXNativeTarget "JXRtc-Pro" */;
 			buildPhases = (
-				FE9173552C2D1CEF00F9279C /* [CP] Check Pods Manifest.lock */,
+				2E920875A7100669B3900C27 /* [CP] Check Pods Manifest.lock */,
 				FE9173562C2D1CEF00F9279C /* Sources */,
 				FE91738A2C2D1CEF00F9279C /* Frameworks */,
 				FE91738D2C2D1CEF00F9279C /* Resources */,
-				FE9173972C2D1CEF00F9279C /* [CP] Embed Pods Frameworks */,
+				FE63D8012C2EBE51003DF8AC /* Embed Frameworks */,
+				7316C10CF09692F2EE12CDAF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "JXRtc-Pro";
-			packageProductDependencies = (
-				FE9173532C2D1CEF00F9279C /* WebRTC */,
-			);
 			productName = JXRtc;
 			productReference = FE91739B2C2D1CEF00F9279C /* JXRtc-Pro.app */;
 			productType = "com.apple.product-type.application";
@@ -642,15 +746,13 @@
 				FEE141CA2C2D07C4002B0985 /* Frameworks */,
 				FEE141CB2C2D07C4002B0985 /* Resources */,
 				CB6EDA027CF64FE27F420960 /* [CP] Embed Pods Frameworks */,
+				FE63D7FB2C2EBE0A003DF8AC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = JXRtc;
-			packageProductDependencies = (
-				FE9173052C2D1CAC00F9279C /* WebRTC */,
-			);
 			productName = JXRtc;
 			productReference = FEE141CD2C2D07C4002B0985 /* JXRtc.app */;
 			productType = "com.apple.product-type.application";
@@ -724,9 +826,6 @@
 				Base,
 			);
 			mainGroup = FEE141C42C2D07C4002B0985;
-			packageReferences = (
-				FE9173042C2D1CAC00F9279C /* XCRemoteSwiftPackageReference "WebRTC" */,
-			);
 			productRefGroup = FEE141CE2C2D07C4002B0985 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -749,9 +848,11 @@
 				FE9173442C2D1CD600F9279C /* LoginVC.xib in Resources */,
 				FE9173452C2D1CD600F9279C /* LaunchScreen.storyboard in Resources */,
 				FE9173462C2D1CD600F9279C /* CallPlayVC.xib in Resources */,
+				FE63D7DE2C2E9F15003DF8AC /* CallVideoView.xib in Resources */,
 				FE9173472C2D1CD600F9279C /* Assets.xcassets in Resources */,
 				FE9173482C2D1CD600F9279C /* TestVC.xib in Resources */,
 				FE9173492C2D1CD600F9279C /* MainCell.xib in Resources */,
+				FE63D7E22C2EA075003DF8AC /* CallVoiceView.xib in Resources */,
 				FE91734A2C2D1CD600F9279C /* SetingVC.xib in Resources */,
 				FE91734B2C2D1CD600F9279C /* Main.storyboard in Resources */,
 			);
@@ -765,9 +866,11 @@
 				FE91738F2C2D1CEF00F9279C /* LoginVC.xib in Resources */,
 				FE9173902C2D1CEF00F9279C /* LaunchScreen.storyboard in Resources */,
 				FE9173912C2D1CEF00F9279C /* CallPlayVC.xib in Resources */,
+				FE63D7DF2C2E9F15003DF8AC /* CallVideoView.xib in Resources */,
 				FE9173922C2D1CEF00F9279C /* Assets.xcassets in Resources */,
 				FE9173932C2D1CEF00F9279C /* TestVC.xib in Resources */,
 				FE9173942C2D1CEF00F9279C /* MainCell.xib in Resources */,
+				FE63D7E32C2EA075003DF8AC /* CallVoiceView.xib in Resources */,
 				FE9173952C2D1CEF00F9279C /* SetingVC.xib in Resources */,
 				FE9173962C2D1CEF00F9279C /* Main.storyboard in Resources */,
 			);
@@ -781,9 +884,11 @@
 				FE9172EB2C2D1B1E00F9279C /* LoginVC.xib in Resources */,
 				FEE141DD2C2D07C4002B0985 /* LaunchScreen.storyboard in Resources */,
 				FE9172F32C2D1B1E00F9279C /* CallPlayVC.xib in Resources */,
+				FE63D7DD2C2E9F15003DF8AC /* CallVideoView.xib in Resources */,
 				FEE141DA2C2D07C4002B0985 /* Assets.xcassets in Resources */,
 				FE9172F12C2D1B1E00F9279C /* TestVC.xib in Resources */,
 				FE9172E52C2D1B1E00F9279C /* MainCell.xib in Resources */,
+				FE63D7E12C2EA075003DF8AC /* CallVoiceView.xib in Resources */,
 				FE9172EF2C2D1B1E00F9279C /* SetingVC.xib in Resources */,
 				FEE141D82C2D07C4002B0985 /* Main.storyboard in Resources */,
 			);
@@ -806,6 +911,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2E920875A7100669B3900C27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXRtc-Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		506DEEB23F782E2000C93894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JXRtc-Dev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7316C10CF09692F2EE12CDAF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Pro/Pods-JXRtc-Pro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Pro/Pods-JXRtc-Pro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Pro/Pods-JXRtc-Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFD4DBE940306624BBAEECE4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -828,85 +994,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C0587EB5439CD072BF9024E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Dev/Pods-JXRtc-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Dev/Pods-JXRtc-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXRtc-Dev/Pods-JXRtc-Dev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		CB6EDA027CF64FE27F420960 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE91730A2C2D1CD600F9279C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JXRtc-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE91734C2C2D1CD600F9279C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JXRtc/Pods-JXRtc-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE9173552C2D1CEF00F9279C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-JXRtc-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE9173972C2D1CEF00F9279C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -931,19 +1036,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE91730C2C2D1CD600F9279C /* JXWebRtcEngine.swift in Sources */,
-				FE91730D2C2D1CD600F9279C /* MBProgressHUD.ex.swift in Sources */,
+				FE63D8142C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */,
 				FE91730E2C2D1CD600F9279C /* Table.swift in Sources */,
+				FE63D7E62C2EA216003DF8AC /* UIView.swift in Sources */,
 				FE91730F2C2D1CD600F9279C /* SignalingClient.swift in Sources */,
 				FE9173102C2D1CD600F9279C /* JXSocketEvent.swift in Sources */,
 				FE9173112C2D1CD600F9279C /* JXRTCCallSession.swift in Sources */,
 				FE9173122C2D1CD600F9279C /* StarscreamProvider.swift in Sources */,
+				FE63D8182C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */,
 				FE9173132C2D1CD600F9279C /* MainCell.swift in Sources */,
+				FE63D7EA2C2EA98E003DF8AC /* CALayer.swift in Sources */,
 				FE9173142C2D1CD600F9279C /* IJXEventProtocol.swift in Sources */,
 				FE9173152C2D1CD600F9279C /* ViewController.swift in Sources */,
 				FE9173162C2D1CD600F9279C /* GASuspendModel.swift in Sources */,
 				FE9173182C2D1CD600F9279C /* Tools.swift in Sources */,
 				FE9173192C2D1CD600F9279C /* AppDelegate.swift in Sources */,
 				FE91731A2C2D1CD600F9279C /* LMMusicPlayer.m in Sources */,
+				FE63D7D72C2E9CE5003DF8AC /* CallVideoView.swift in Sources */,
+				FE63D7DA2C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */,
 				FE91731B2C2D1CD600F9279C /* SetingVC.swift in Sources */,
 				FE91731C2C2D1CD600F9279C /* EngineCallback.swift in Sources */,
 				FE91731D2C2D1CD600F9279C /* Message.swift in Sources */,
@@ -986,19 +1096,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9173572C2D1CEF00F9279C /* JXWebRtcEngine.swift in Sources */,
-				FE9173582C2D1CEF00F9279C /* MBProgressHUD.ex.swift in Sources */,
+				FE63D8152C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */,
 				FE9173592C2D1CEF00F9279C /* Table.swift in Sources */,
+				FE63D7E72C2EA216003DF8AC /* UIView.swift in Sources */,
 				FE91735A2C2D1CEF00F9279C /* SignalingClient.swift in Sources */,
 				FE91735B2C2D1CEF00F9279C /* JXSocketEvent.swift in Sources */,
 				FE91735C2C2D1CEF00F9279C /* JXRTCCallSession.swift in Sources */,
 				FE91735D2C2D1CEF00F9279C /* StarscreamProvider.swift in Sources */,
+				FE63D8192C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */,
 				FE91735E2C2D1CEF00F9279C /* MainCell.swift in Sources */,
+				FE63D7EB2C2EA98E003DF8AC /* CALayer.swift in Sources */,
 				FE91735F2C2D1CEF00F9279C /* IJXEventProtocol.swift in Sources */,
 				FE9173602C2D1CEF00F9279C /* ViewController.swift in Sources */,
 				FE9173612C2D1CEF00F9279C /* GASuspendModel.swift in Sources */,
 				FE9173632C2D1CEF00F9279C /* Tools.swift in Sources */,
 				FE9173642C2D1CEF00F9279C /* AppDelegate.swift in Sources */,
 				FE9173652C2D1CEF00F9279C /* LMMusicPlayer.m in Sources */,
+				FE63D7D62C2E9CE4003DF8AC /* CallVideoView.swift in Sources */,
+				FE63D7DB2C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */,
 				FE9173662C2D1CEF00F9279C /* SetingVC.swift in Sources */,
 				FE9173672C2D1CEF00F9279C /* EngineCallback.swift in Sources */,
 				FE9173682C2D1CEF00F9279C /* Message.swift in Sources */,
@@ -1041,19 +1156,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE9172D12C2D1B1E00F9279C /* JXWebRtcEngine.swift in Sources */,
-				FE9172FD2C2D1B1E00F9279C /* MBProgressHUD.ex.swift in Sources */,
+				FE63D8132C2ECAED003DF8AC /* EWMBProgressHUD.swift in Sources */,
 				FE9172ED2C2D1B1E00F9279C /* Table.swift in Sources */,
+				FE63D7E52C2EA216003DF8AC /* UIView.swift in Sources */,
 				FE9172E32C2D1B1E00F9279C /* SignalingClient.swift in Sources */,
 				FE9172D22C2D1B1E00F9279C /* JXSocketEvent.swift in Sources */,
 				FE9172D92C2D1B1E00F9279C /* JXRTCCallSession.swift in Sources */,
 				FE9172E02C2D1B1E00F9279C /* StarscreamProvider.swift in Sources */,
+				FE63D8172C2ECE72003DF8AC /* MBProgressHUD.ex.swift in Sources */,
 				FE9172EA2C2D1B1E00F9279C /* MainCell.swift in Sources */,
+				FE63D7E92C2EA98E003DF8AC /* CALayer.swift in Sources */,
 				FE9172D62C2D1B1E00F9279C /* IJXEventProtocol.swift in Sources */,
 				FEE141D52C2D07C4002B0985 /* ViewController.swift in Sources */,
 				FE9172F82C2D1B1E00F9279C /* GASuspendModel.swift in Sources */,
 				FE9172FC2C2D1B1E00F9279C /* Tools.swift in Sources */,
 				FEE141D12C2D07C4002B0985 /* AppDelegate.swift in Sources */,
 				FE9172E72C2D1B1E00F9279C /* LMMusicPlayer.m in Sources */,
+				FE63D7D52C2E9CDD003DF8AC /* CallVideoView.swift in Sources */,
+				FE63D7D92C2E9CFF003DF8AC /* CallVoiceView.swift in Sources */,
 				FE9172F42C2D1B1E00F9279C /* SetingVC.swift in Sources */,
 				FE9172CF2C2D1B1E00F9279C /* EngineCallback.swift in Sources */,
 				FE9172E22C2D1B1E00F9279C /* Message.swift in Sources */,
@@ -1145,7 +1265,7 @@
 /* Begin XCBuildConfiguration section */
 		FE91734E2C2D1CD600F9279C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E859BF3EA11BE8C7AFF316 /* Pods-JXRtc.debug.xcconfig */;
+			baseConfigurationReference = 6234D83123EF88BE5D299888 /* Pods-JXRtc-Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1174,15 +1294,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "JXRtc/JXRtc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
 		FE91734F2C2D1CD600F9279C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EABEE63D7F1A3F863A6EB85 /* Pods-JXRtc.release.xcconfig */;
+			baseConfigurationReference = AD755B4F60A2457218567179 /* Pods-JXRtc-Dev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1211,14 +1333,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "JXRtc/JXRtc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PRODUCT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
 		FE9173992C2D1CEF00F9279C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E859BF3EA11BE8C7AFF316 /* Pods-JXRtc.debug.xcconfig */;
+			baseConfigurationReference = D5AFBB2564BC3C321D01A078 /* Pods-JXRtc-Pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1247,6 +1371,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "JXRtc/JXRtc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "${PRODUCT_MODULE_NAME}-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1255,7 +1380,7 @@
 		};
 		FE91739A2C2D1CEF00F9279C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EABEE63D7F1A3F863A6EB85 /* Pods-JXRtc.release.xcconfig */;
+			baseConfigurationReference = FA2A801D5B766C64565C403F /* Pods-JXRtc-Pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1284,6 +1409,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "JXRtc/JXRtc-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "${PRODUCT_MODULE_NAME}-Swift.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1410,7 +1536,7 @@
 		};
 		FEE141F82C2D07C5002B0985 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7E859BF3EA11BE8C7AFF316 /* Pods-JXRtc.debug.xcconfig */;
+			baseConfigurationReference = 56E1DC09F75486D500A28F84 /* Pods-JXRtc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1445,7 +1571,7 @@
 		};
 		FEE141F92C2D07C5002B0985 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6EABEE63D7F1A3F863A6EB85 /* Pods-JXRtc.release.xcconfig */;
+			baseConfigurationReference = 1173A5ADB29DE7B323EACF48 /* Pods-JXRtc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1611,51 +1737,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FE9173042C2D1CAC00F9279C /* XCRemoteSwiftPackageReference "WebRTC" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stasel/WebRTC/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 119.0.0;
-			};
-		};
-		FE9173092C2D1CD600F9279C /* XCRemoteSwiftPackageReference "WebRTC" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stasel/WebRTC/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 119.0.0;
-			};
-		};
-		FE9173542C2D1CEF00F9279C /* XCRemoteSwiftPackageReference "WebRTC" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stasel/WebRTC/";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 119.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FE9173052C2D1CAC00F9279C /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FE9173042C2D1CAC00F9279C /* XCRemoteSwiftPackageReference "WebRTC" */;
-			productName = WebRTC;
-		};
-		FE9173082C2D1CD600F9279C /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FE9173092C2D1CD600F9279C /* XCRemoteSwiftPackageReference "WebRTC" */;
-			productName = WebRTC;
-		};
-		FE9173532C2D1CEF00F9279C /* WebRTC */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FE9173542C2D1CEF00F9279C /* XCRemoteSwiftPackageReference "WebRTC" */;
-			productName = WebRTC;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEE141C52C2D07C4002B0985 /* Project object */;
 }

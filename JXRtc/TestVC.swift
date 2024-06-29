@@ -11,6 +11,19 @@ class TestVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let view = CallVideoView.loadFromNib("CallVideoView")
+        
+//        view.backgroundColor = .red
+        
+        self.view.addSubview(view)
+        
+        view.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(kTopBarTotalHeight)
+            make.left.equalToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
+            make.size.equalTo(CGSize(width: 300, height: 400))
+        }
 
         // Do any additional setup after loading the view.
     }

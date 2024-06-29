@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import HandyJSON
+
 
 @available(iOS 13.0, *)
 class NativeWebSocket: NSObject, WebSocketProvider {

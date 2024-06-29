@@ -47,7 +47,7 @@ class CallPlayVC: UIViewController {
         self.hasLocalSdp = false
         
         self.view.backgroundColor = .clear
-        self.bgView.backgroundColor = .green
+        self.bgView.backgroundColor = .clear
         let pan = UIPanGestureRecognizer(target: self, action: #selector(panAction(pan:)))
         self.localVideoView.addGestureRecognizer(pan)
         initLive(targetId: targetId, false, isAudioOnly, isReplace: false)

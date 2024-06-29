@@ -14,6 +14,76 @@ pod 'WCDB.swift'
 pod 'RxCocoa'
 pod "Kingfisher"
 pod 'PLPlayerKit'
-
+pod 'SnapKit'
+#pod 'WebRTC-lib'
 end
 
+target 'JXRtc-Dev' do
+  
+pod 'CBFlashyTabBarController'
+pod 'Starscream'
+pod 'Moya/RxSwift'
+pod 'HandyJSON'
+pod 'MBProgressHUD'
+pod 'FLAnimatedImage'
+pod "MJRefresh"
+pod 'WCDB.swift'
+pod 'RxCocoa'
+pod "Kingfisher"
+pod 'PLPlayerKit'
+pod 'SnapKit'
+#pod 'WebRTC-lib'
+end
+
+target 'JXRtc-Pro' do
+  
+pod 'CBFlashyTabBarController'
+pod 'Starscream'
+pod 'Moya/RxSwift'
+pod 'HandyJSON'
+pod 'MBProgressHUD'
+pod 'FLAnimatedImage'
+pod "MJRefresh"
+pod 'WCDB.swift'
+pod 'RxCocoa'
+pod "Kingfisher"
+pod 'PLPlayerKit'
+pod 'SnapKit'
+#pod 'WebRTC-lib'
+end
+
+
+#多个target的pod引入，方式一：如每个pod都引入masonry
+#targetArray = ['target1','target2']
+#targetArray.each do |t|
+#    target t do
+#        pod 'Masonry', '~> 1.1.0'
+#    end
+#end
+
+##多个target的pod引入，方式二：如每个pod都引入masonry
+#def commonPods
+#    pod 'Masonry', '~> 1.1.0'
+#end
+#
+##工程一：
+#target 'AnyDoorDemo' do
+#    commonPods
+#    pod 'AFNetworking', '~> 3.2.1'
+#target 'AnyDoorDemoTests' do
+#    inherit! :search_paths
+#    pod 'Specta', '~> 1.0.7'
+#    pod 'OCMock', '~> 3.4.2'
+#    pod 'Expecta', '~> 1.0.6'
+#end
+#
+#  target 'AnyDoorDemoUITests' do
+#    inherit! :search_paths
+#    # Pods for testing
+#  end
+#end
+#
+##工程二：
+#target 'HostApp' do
+#    commonPods
+#end

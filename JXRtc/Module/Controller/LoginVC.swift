@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 class LoginVC: UIViewController {
 
     @IBOutlet weak var idTF: UITextField!

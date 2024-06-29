@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import CBFlashyTabBarController
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?

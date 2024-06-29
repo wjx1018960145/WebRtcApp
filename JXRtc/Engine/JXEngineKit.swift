@@ -107,6 +107,11 @@ class JXEngineKit: NSObject {
 
     func  setNil(){
         mCurrentCallSession = nil
+        mCurrentCallSession?.webRtc?.stopStream()
+        mCurrentCallSession?.webRtc?.stopPreview()
+        mCurrentCallSession?.webRtc?.stopRemoteVideo()
+        
+        
     }
     
     func startRemoteView(view:UIView){
