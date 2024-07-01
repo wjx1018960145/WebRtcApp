@@ -107,9 +107,10 @@ class JXEngineKit: NSObject {
 
     func  setNil(){
         mCurrentCallSession = nil
-        mCurrentCallSession?.webRtc?.stopStream()
-        mCurrentCallSession?.webRtc?.stopPreview()
-        mCurrentCallSession?.webRtc?.stopRemoteVideo()
+        ManagerTool.shared.webRTCClient?.stopStream()
+        ManagerTool.shared.webRTCClient?.stopPreview()
+        ManagerTool.shared.webRTCClient?.stopRemoteVideo()
+        
         
         
     }

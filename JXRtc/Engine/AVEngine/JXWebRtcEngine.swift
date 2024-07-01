@@ -596,8 +596,14 @@ extension JXWebRtcEngine:IEngine{
     
     func stopPreview() {
         self.videoCapturer = nil
-        self.localVideoTrack = nil
-        self.remoteVideoTrack = nil
+      
+//        JXWebRtcEngine.factory.stopAecDump()
+        
+        ManagerTool.shared.webRTCClient?.localVideoTrack?.isEnabled = false
+        ManagerTool.shared.webRTCClient?.remoteVideoTrack?.isEnabled = false
+        ManagerTool.shared.webRTCClient?.peerConnection?.close()
+        ManagerTool.shared.webRTCClient?.peerConnection = nil
+        
     }
     
     func startStream() {

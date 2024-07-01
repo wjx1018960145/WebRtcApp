@@ -39,7 +39,11 @@ class CallPlayVC: UIViewController {
    
     
  
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        JXEngineKit.shared.setNil()
+        
+        
+    }
 
     
     override func viewDidLoad() {
