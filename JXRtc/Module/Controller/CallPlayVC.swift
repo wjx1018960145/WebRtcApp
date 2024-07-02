@@ -19,6 +19,10 @@ class CallPlayVC: UIViewController {
     @IBOutlet weak var answerSucView: UIView!
     @IBOutlet weak var tipLab: UILabel!
     @IBOutlet weak var answerView: UIView!
+    
+    var video:CallVideoView?
+    var voice:CallVoiceView?
+    
     var targetId = ""
     var isOutgoing = false
     var inviteRoom = ""

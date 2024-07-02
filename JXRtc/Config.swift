@@ -27,13 +27,13 @@ import Foundation
 //                                     "stun:192.168.43.168:3478"]
 #if Dev
 
-fileprivate let defaultIceServers = ["stun:192.168.1.35:3478",
-                                     "stun:192.168.1.35:3478",
-                                     "stun:192.168.1.35:3478",
-                                     "stun:192.168.1.35:3478",
-                                     "turn:192.168.1.35:3478"]
-fileprivate let defaultSignalingServerUrl = "ws://192.168.1.13:8080/ws"
-fileprivate let baseUrl = "http://192.168.1.13:8080/"
+fileprivate let defaultIceServers = ["stun:192.168.1.35:111",
+                                     "stun:192.168.1.35:111",
+                                     "stun:192.168.1.35:111",
+                                     "stun:192.168.1.35:111",
+                                     "turn:192.168.1.35:111"]
+fileprivate let defaultSignalingServerUrl = "ws://192.168.0.151:10800/ws"
+fileprivate let baseUrl = "http://192.168.0.151:10800/"
 
 #elseif Pro
 fileprivate let defaultIceServers = ["stun:172.20.10.12:3478",
